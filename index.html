@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funtask.io</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <div class="theme-switch-container">
+            <span class="mode-label">Mode</span>
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <div class="container">
+            <header class="stats-grid">
+                <div class="stat-card">
+                    <span class="label">Total</span>
+                    <h2 id="total-tasks">0</h2>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Selesai</span>
+                    <h2 id="completed-tasks" class="purple-text">0</h2>
+                </div>
+                <div class="stat-card">
+                    <span class="label">Progress</span>
+                    <h2 id="progress-percent">0%</h2>
+                </div>
+            </header>
+
+            <main class="main-content">
+                <section class="input-area">
+                    <div class="row">
+                        <input type="text" id="todo-input" placeholder="Apa rencana hari ini?">
+                        <input type="date" id="date-input">
+                    </div>
+                    <textarea id="desc-input" placeholder="Deskripsi tambahan (opsional)..."></textarea>
+                    <button id="add-btn">Tambah Tugas</button>
+                </section>
+
+                <section class="tool-bar">
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="Cari tugas...">
+                    </div>
+                    <button id="delete-all-btn">Hapus Semua</button>
+                </section>
+
+                <div class="list-wrapper">
+                    <ul id="todo-list"></ul>
+                    <div id="empty-state" class="hidden">
+                        <p>Tidak ada tugas ditemukan</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+        <p>Powered by FunTask.io | Simple To-Do-List</p>
+        </footer>
+    </div>
+  
+    <script src="js/script.js"></script>
+</body>
+</html>
